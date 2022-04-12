@@ -1,0 +1,133 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - hey there
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+    - namaste
+
+- intent: how_are_you
+  examples: |
+    - how are you?
+    - are you fine?
+    - what about you?
+    - are you good?
+
+- intent: happy
+  examples: |
+    - i am good
+    - i am fine
+    - fine
+    - thank you
+    - nice
+    - great job
+    - i like this
+    - good job
+    - yes
+    - oky
+    - ok
+  
+
+- intent: hello_world
+  examples: |
+    - hello world
+    - hello world peoples
+  
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+
+- intent: about_nic
+  examples: |
+    - what is nic?
+    - tell me about nic.
+    - information about nic?
+    - about rastriya abishkar kendra?
+  
+- intent: about_mahabir_pun
+  examples: |
+    - who is Dr. Mahabir Pun?
+    - tell me about Dr. Mahabir Pun.
+    - information about Dr. Mahabir Pun.
+    - Chairperson
+  
+- intent: contact_number
+  examples: |
+    - i need contact number of nic.
+    - phone number of nic.
+    - gmail
+    - mail id
+
+- intent: location
+  examples: |
+    - i need location of nic.
+    - where it is located.
+    - give me the location of nic
+    - where is nic.
+    - where are you from?
+
+- intent: nic_projects
+  examples: |
+    - what are the current nic projects?
+    - nic projects work.
+    - nic different projects.
+
+ 
+
+- intent: about_projects
+  examples: |
+    - about [artificial intelligence](projects) at nic.
+    - about [agriculture](projects) at nic.
+    - about [healthcare](projects) at nic .
+    - about [household](projects) at nic.
+
+
+- intent: donation_contribution
+  examples: |
+    - how to donate fund to nic?
+    - donation help to nic.
+    - contribution to nic.
+    - money support for nic.
+    - how to send money for nic.

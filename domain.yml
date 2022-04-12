@@ -1,31 +1,79 @@
-version: '3.0'
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+version: "3.1"
+
 intents:
-- mood_unhappy
-- greet
-- goodbye
-- affirm
-- deny
-- mood_great
-- bot_challenge
-- are_you
+  - greet
+  - how_are_you
+  - happy
+  - goodbye
+  - mood_unhappy
+  - bot_challenge
+  - hello_world
+  - about_nic
+  - about_mahabir_pun
+  - contact_number
+  - location
+  - about_projects
+  - nic_projects
+  - donation_contribution 
+  
+actions:
+  - action_hello_world
+  - action_about_projects
+
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: "Hi! I'm Tapendra your virtual assistant.How may i help you?"
+
+  utter_how_are_you:
+  - text: "I am great.How about you?"
+
   utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
   utter_did_that_help:
-  - text: Did that help you?
+  - text: "Did that help you?"
+
   utter_happy:
-  - text: Great, carry on!
+  - text: "Great,carry on. Can i help you with anythings else?"
+
   utter_goodbye:
-  - text: Bye
+  - text: "Bye,Take care."
+
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
-  utter_areyou:
-  - text: I am Tapendra Baduwal your virtual machine.
-actions:
-- utter_greet
+  - text: "I am Tapendra, Your virtual assistant."
+  
+  utter_about_nic:
+  - text: "National Innovation Center Nepal a nonprofit
+  sharing organization incorporated on Nov 9th, 2012 is
+  dedicated to develop the culture of research, technology
+  and innovation in Nepal."
+
+  utter_about_mahabir_pun:
+  - text: "Dr. Mahabir Pun a teacher, social entrepreneur, and activist. 
+  Known for work in applying wireless technologies to develop
+  remote areas of the Himalayas. Widely known as Wireless Man in Nepal."
+ 
+  utter_contact_number:
+  - text: "Dr. Mahabir Pun 9841592361 ,office@nicnepal.org"
+   
+  utter_location:
+  - text: "Inside Tribhuvan University, Kirtipur, Kathmandu, Nepal - 44618"
+ 
+  utter_nic_projects:
+  - text: "At NIC, we are working on different projects that target different Areas 
+  of Innovation some of them are Blindspot Detection,AI based Robot,Rasa Chatbot,
+  AI based Rocket, Black Soldier Fly,Monkey Repellent System,Ginger Drink,Sabji Kothi,
+  Baby Warmer,Oxygen Mini Plant,Solar Water Heater,Incense Making Machine,Cooking Stove,
+  Grass Cutter etc."
+ 
+  utter_donation_contribution:
+  - text: " Nepal bank ltd and Global IME bank ltd Testing completed "
+ 
+
+ 
+
+session_config:
+  session_expiration_time: 120
+  carry_over_slots_to_new_session: true
+

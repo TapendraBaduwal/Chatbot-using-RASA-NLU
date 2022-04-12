@@ -1,0 +1,78 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy
+  steps:
+  - intent: happy
+  - action: utter_happy
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: sad path 1
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  
+- story: sad path 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  
+- story: hello world
+  steps:
+  - intent: hello_world
+  - action: action_hello_world
+
+- story: about nic
+  steps:
+  - intent: about_nic
+  - action: utter_about_nic
+
+- story: about mahabir pun
+  steps:
+  - intent: about_mahabir_pun
+  - action: utter_about_mahabir_pun
+
+- story: how are you
+  steps:
+  - intent: how_are_you
+  - action: utter_how_are_you
+
+- story: contact numbers
+  steps:
+  - intent: contact_number
+  - action: utter_contact_number
+
+- story: location
+  steps:
+  - intent: location
+  - action: utter_location
+
+- story: nic projects
+  steps:
+  - intent: nic_projects
+  - action: utter_nic_projects
+
+
+- story: about projects
+  steps:
+  - intent: about_projects
+  - action: action_about_projects
+
+- story: donation contribution
+  steps:
+  - intent: donation_contribution 
+  - action: utter_donation_contribution 
+
+  
